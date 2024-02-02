@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice 1</title>
+</head>
+<body>
+    <h1 id="welcome">
+        
+    </h1>
+    <label></label>
+    <input id="myText">
+    <br>
+    <br>
+    <button id="mySubmit">
+        submit your username
+    </button>
+
+    <script src="./index.js"></script>
+</body>
+
+<script>
+document.getElementById('mySubmit').onclick = () =>{
+    let username = document.getElementById('myText').value;
+    document.getElementById('welcome').textContent = 'Hello, welcome  ' + username + '!';
+}
+</script>
+</html>
